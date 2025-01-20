@@ -23,8 +23,7 @@
 
 /* navbar */
 .navbar{
-    border: 2px solid black;
-    max-width: 1440px;
+    max-width: 1158.61px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -53,8 +52,8 @@
     font-weight: 500;
 }
 .button{
-    
     margin: 10px 10px;
+    margin-left: 60px;
 }
 .btn-primary{
     width: 197px;
@@ -66,4 +65,97 @@
     font-size: 1.25rem;
     font-weight: 500;
     border: none;
+}
+.brand-name{
+    font-weight: 700;
+    margin-left: -150px;
+}
+.hr{
+    display: none;
+}
+.menu-bar{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* banner section styles */
+.banner{
+    display: flex;
+    max-width: 1158.61px;
+    margin: 0 auto;
+    gap: 50px;
+    margin-top: 18px;
+}
+.banner-description{
+    width: 640px;
+    margin-top: 122px;
+}
+.banner-header{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+}
+.banner-paragraph{
+    margin-top: -15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.black-button{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: white;
+    font-size: 1.25rem;
+    padding: 10px;
+    margin: 10px 0px;
+    font-weight: 600;
+    width: 197px;
+    height: 50px;
+    margin-top: -3px;
+}
+
+
+
+/* responsiveness */
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        width: auto;
+
+    }
+    .button,.menu{
+        display: none;
+    }
+    .menu-bar{
+        display: flex;
+        margin-top: 20px;
+    }
+    .brand-name{
+        display: none;
+    }
+    .navbar{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hr {
+        display: block;
+        box-sizing: border-box;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+    
+    
+    .banner-description{
+        width: auto;
+        text-align: center;
+        margin-top: -70px;
+    }
+    
+    .banner-img,.navbar{
+        width: 357px;
+        margin: 0 auto;
+    }
+    
 }
