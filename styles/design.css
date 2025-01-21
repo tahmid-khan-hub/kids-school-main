@@ -238,20 +238,33 @@ main{
     position: relative;
     width: fit-content;
 }
-.pic-1 img {
+/* .pic-1 img{
     display: block;
     width: 100%;
     height: auto;
 }
+.pic-3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+} */
 .pic-2,.pic-3,.pic-4,.pic-5{
     width: 290.69px;
     height: 301.61px;
-    border: 2px solid black;
     border-radius: 16px;
     background: rgb(255, 255, 255);
+    position: relative;
+    width: fit-content;
 }
+.pic-3{
+    width: 290.69px;
+}
+
 .pic-1>img,.pic-2>img,.pic-3>img,.pic-4>img,.pic-5>img{
     border-radius: 16px 16px 0px 0px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .picture-collage{
     display: grid;
@@ -270,15 +283,32 @@ main{
     font-size: 0.9rem;
     font-weight: 500;
 }
+.btn-2,.btn-3,.btn-4,.btn-5{
+    position: absolute;
+    top: 160px;
+    left: 28px;
+    background-color: rgb(149, 178, 38);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.btn-3{
+    background-color: rgb(93, 88, 240);
+}
+
 .pic-1-description{
     margin-top: 50px;
 }
+
 .pic-1-description>h3{
     margin-left: 30px;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 38.35px;
     margin-bottom: 51px;
+    width: 402.49px;
 }
 .pic-1-description>p{
     width: 433px;
@@ -288,7 +318,49 @@ main{
     line-height: 28.76px;
     color: rgb(102, 102, 102);
 }
-
+.pic-2-description>h5{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    padding-left: 37.91px;
+    width: 198.04px;
+}
+.pic-3-description>h5{
+    width: 181.24px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    padding-left: 37.91px;
+}
+.pic-4-description>h5{
+    width: 190.68px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    padding-left: 37.91px;
+}
+.pic-5-description>h5{
+    width: 161.05px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    padding-left: 37.91px;
+}
+.black-button-2{
+    max-width: 197px;
+    margin: 0 auto;
+}
+.black-button-2>button{
+    border-radius: 12px;
+    color: white;
+    width: 197px;
+    height: 50px;
+    background: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 60px;
+}
 
 
 
@@ -346,5 +418,14 @@ main{
     }
     .curriculum-header>h2{
         font-size: 1.9rem;
+    }
+    .pic-1{
+        display: none;
+    }
+    main{
+        width: auto;
+    }
+    .our-stories{
+        width: auto;
     }
 }
