@@ -125,7 +125,7 @@
 
 /* main section */
 main{
-    background-image: url('../assets/bg.png');
+    background: url('../assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 /* curriculum section styles */
 .curriculum-header{
@@ -192,22 +192,105 @@ main{
     margin: 0 auto;
     display: flex;
     gap: 10px;
-    
+    margin-bottom: 60px;
 }
 .circle-1,.circle-2{
     width: 60px;
     height: 60px;
     border-radius: 30px;
     background: rgb(254, 163, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     
 }
 .circle-1>p,.circle-2>p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    width: 15px;
-    height: 24px;
+    margin: 0;
     color: white;
 }
+
+/* our stories styles */
+
+.our-stories-header{
+    max-width: 460.61px;
+    margin: 0 auto;
+}
+.our-stories-header>h2{
+    font-size: 2.875rem;
+    font-weight: 700;
+    text-align: center;
+}
+.our-stories{
+    max-width: 1160.27px;
+    margin: 0 auto;
+    display: flex;
+    gap: 18.73px;
+    margin-bottom: 80px;
+
+}
+.pic-1{
+    width: 540.27px;
+    height: 630.52px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    width: fit-content;
+}
+.pic-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.pic-2,.pic-3,.pic-4,.pic-5{
+    width: 290.69px;
+    height: 301.61px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.pic-1>img,.pic-2>img,.pic-3>img,.pic-4>img,.pic-5>img{
+    border-radius: 16px 16px 0px 0px;
+}
+.picture-collage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+.btn-1{
+    position: absolute;
+    top: 320px;
+    left: 28px;
+    background-color: #59d4e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.pic-1-description{
+    margin-top: 50px;
+}
+.pic-1-description>h3{
+    margin-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 38.35px;
+    margin-bottom: 51px;
+}
+.pic-1-description>p{
+    width: 433px;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    color: rgb(102, 102, 102);
+}
+
+
+
 
 /* responsiveness */
 @media screen and (max-width:576px){
@@ -249,5 +332,19 @@ main{
         width: 357px;
         margin: 0 auto;
     }
-    
+
+    .orange-circle{
+        display: none;
+    }
+    .curriculum{
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 90px;
+    }
+    .curriculum-header{
+        text-align: center;
+    }
+    .curriculum-header>h2{
+        font-size: 1.9rem;
+    }
 }
