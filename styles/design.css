@@ -64,6 +64,7 @@
     margin: 10px 10px;
     margin-left: 60px;
 }
+
 .btn-primary{
     width: 197px;
     height: 50px;
@@ -74,7 +75,9 @@
     font-size: 1.25rem;
     font-weight: 500;
     border: none;
+    
 }
+
 .brand-name{
     font-weight: 700;
     margin-left: -150px;
@@ -130,13 +133,23 @@ main{
 /* curriculum section styles */
 .curriculum-header{
     max-width: 460.61px;
+    position: relative;
+    overflow: hidden;
     margin: 0 auto;
     margin-top: 60px;
+    height: 50px;
+    margin-bottom: 50px;
 }
 .curriculum-header>h2{
     font-size: 2.875rem;
     font-weight: 700;
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: marquee 15s linear infinite;
+    margin: 0;
 }
+
 .curriculum{
     display: flex;
     max-width: 1158.48px;
@@ -216,11 +229,20 @@ main{
 .our-stories-header{
     max-width: 460.61px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+    margin-bottom: 50px;
 }
 .our-stories-header>h2{
     font-size: 2.875rem;
     font-weight: 700;
     text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: marquee 15s linear infinite;
+    margin: 0;
 }
 .our-stories{
     max-width: 1160.27px;
@@ -386,7 +408,7 @@ main{
 }
 .education>p{
     width: 399px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 25px;
     color: white;
@@ -410,11 +432,11 @@ main{
     font-weight: 700;
     line-height: 30px;
 }
-.list{
+/* .list{
     list-style: none;
     margin-left: -39px;
-}
-.list li{
+} */
+.about>p{
     font-size: 1.25rem;
     font-weight: 500;
     margin: 0 auto;
@@ -431,6 +453,16 @@ main{
     color: white;
     font-size: 1.5rem;
 }
+
+@keyframes marquee {
+    from{
+      transform: translateX(100%);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+  
 
 
 /* responsiveness */
@@ -564,5 +596,18 @@ main{
         width: 80%;
         margin-left: 30px;
         margin-top: 30px;
+    }
+    .footer{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .about{
+        margin-left: auto;
+        justify-items: flex-start;
+        margin-left: -2px;
+    }
+    .help{
+        margin-bottom: 50px;
     }
 }
