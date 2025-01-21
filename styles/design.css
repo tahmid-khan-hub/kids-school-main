@@ -228,7 +228,7 @@ main{
     display: flex;
     gap: 18.73px;
     margin-bottom: 80px;
-
+    flex-wrap: wrap;
 }
 .pic-1{
     width: 540.27px;
@@ -238,38 +238,35 @@ main{
     position: relative;
     width: fit-content;
 }
-/* .pic-1 img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.pic-3 img{
-    display: block;
-    width: 100%;
-    height: auto;
-} */
+
 .pic-2,.pic-3,.pic-4,.pic-5{
-    width: 290.69px;
-    height: 301.61px;
+    /* width: 290.69px;
+    height: 301.61px; */
+    width: 100%; 
+    height: auto;
     border-radius: 16px;
     background: rgb(255, 255, 255);
     position: relative;
-    width: fit-content;
+    overflow: hidden;
+    /* width: fit-content; */
 }
 .pic-3{
-    width: 290.69px;
+    /* width: 290.69px; */
 }
 
 .pic-1>img,.pic-2>img,.pic-3>img,.pic-4>img,.pic-5>img{
-    border-radius: 16px 16px 0px 0px;
-    display: block;
     width: 100%;
     height: auto;
+    border-radius: 16px 16px 0px 0px;
+    display: block;
+    
 }
 .picture-collage{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
+    width: 601px;
+    height: 622.4px;
 }
 
 .btn-1{
@@ -290,6 +287,8 @@ main{
     background-color: rgb(149, 178, 38);
     color: white;
     padding: 10px 20px;
+    height: 24px;
+    line-height: 24px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -369,7 +368,6 @@ main{
     .banner{
         flex-direction: column-reverse;
         width: auto;
-
     }
     .button,.menu{
         display: none;
@@ -423,9 +421,45 @@ main{
         display: none;
     }
     main{
+    }
+    .picture-collage{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pic-3,.pic-4,.pic-2,.pic-5{
+        width: 100%;
+    }
+    
+    .btn-2,.btn-4{
+        width: auto;
+        padding: 0px;
+        width: 110.91px;
+        height: 22px;
+        font-size: 0.69rem;
+        font-weight: 500;
+        padding-top: 3px;
+        text-align: center;
+        top: 110px;
+    }
+    .btn-5{
+        top: 120px;
+        width: auto;
+        padding: 0px;
+
+    }
+    .btn-3{
+        padding: 0px;
+        top: 110px;
         width: auto;
     }
     .our-stories{
-        width: auto;
+        width: 95%
+    }
+    .pic-2-description{
+        margin-top: 40px;
+    }
+    .pic-2-description>h5,.pic-3-description>h5,.pic-4-description>h5,.pic-5-description>h5{
+        padding: 0px;
+        font-size:0.69rem;
+        
     }
 }
