@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* fonts quicksand and raleway */
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .quicksand {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-/* shared styles */
+
+/* shared styles or color */
 .yellow{
     color: rgb(254, 163, 1);
 }
@@ -64,7 +75,6 @@
     margin: 10px 10px;
     margin-left: 60px;
 }
-
 .btn-primary{
     width: 197px;
     height: 50px;
@@ -75,9 +85,7 @@
     font-size: 1.25rem;
     font-weight: 500;
     border: none;
-    
 }
-
 .brand-name{
     font-weight: 700;
     margin-left: -150px;
@@ -140,6 +148,8 @@ main{
     height: 50px;
     margin-bottom: 50px;
 }
+
+/* added marquee */
 .curriculum-header>h2{
     font-size: 2.875rem;
     font-weight: 700;
@@ -215,7 +225,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center; 
-    
 }
 .circle-1>p,.circle-2>p{
     font-size: 2rem;
@@ -234,6 +243,8 @@ main{
     height: 50px;
     margin-bottom: 50px;
 }
+
+/* added marquee */
 .our-stories-header>h2{
     font-size: 2.875rem;
     font-weight: 700;
@@ -262,18 +273,12 @@ main{
 }
 
 .pic-2,.pic-3,.pic-4,.pic-5{
-    /* width: 290.69px;
-    height: 301.61px; */
     width: 100%; 
     height: auto;
     border-radius: 16px;
     background: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
-    /* width: fit-content; */
-}
-.pic-3{
-    /* width: 290.69px; */
 }
 
 .pic-1>img,.pic-2>img,.pic-3>img,.pic-4>img,.pic-5>img{
@@ -290,7 +295,6 @@ main{
     width: 601px;
     height: 622.4px;
 }
-
 .btn-1{
     position: absolute;
     top: 320px;
@@ -304,17 +308,15 @@ main{
 }
 .btn-2,.btn-3,.btn-4,.btn-5{
     position: absolute;
-    top: 160px;
-    left: 28px;
     background-color: rgb(149, 178, 38);
     color: white;
     padding: 8px 20px;
-    height: 20px;
-    /* line-height: 24px; */
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    z-index: 1;
+    border: none;
+    margin-left: 25px;
+    margin-top: -15px;
 }
 .btn-3{
     background-color: rgb(93, 88, 240);
@@ -385,7 +387,7 @@ main{
 }
 
 /* footer section styles */
- footer{
+footer{
     background: rgb(1, 172, 253);
 } 
 .footer{
@@ -394,8 +396,7 @@ main{
     margin: 0 auto;
     height: 519px;
 }
-.education{
-}
+
 .kids-education{
     display: flex;
     margin-top: 123px;
@@ -432,10 +433,7 @@ main{
     font-weight: 700;
     line-height: 30px;
 }
-/* .list{
-    list-style: none;
-    margin-left: -39px;
-} */
+
 .about>p{
     font-size: 1.25rem;
     font-weight: 500;
@@ -454,6 +452,7 @@ main{
     font-size: 1.5rem;
 }
 
+
 @keyframes marquee {
     from{
       transform: translateX(100%);
@@ -461,12 +460,11 @@ main{
     to{
       transform: translateX(-100%);
     }
-  }
+}
   
-
-
 /* responsiveness */
 @media screen and (max-width:576px){
+    /* header and navbar */
     .banner{
         flex-direction: column-reverse;
         width: auto;
@@ -487,24 +485,23 @@ main{
         justify-content: space-between;
         align-items: center;
     }
-    
-    .hr {
+    .hr{
         display: block;
         box-sizing: border-box;
         border: 0.5px solid rgb(254, 163, 1);
     }
-    
     .banner-description{
         width: auto;
         text-align: center;
         margin-top: -70px;
     }
-    
     .banner-img,.navbar{
-        width: 357px;
+        width: 387px;
         margin: 0 auto;
     }
+    
 
+    /* curriculum and orange button */
     .orange-circle{
         display: none;
     }
@@ -519,71 +516,18 @@ main{
     .curriculum-header>h2{
         font-size: 1.9rem;
     }
+
+    /* picture collage */
     .pic-1{
         display: none;
     }
-    
     .picture-collage{
         grid-template-columns: repeat(2,1fr);
     }
     .pic-3,.pic-4,.pic-2,.pic-5{
-        width: 100%;
+        width: auto;
         height: 290px;
     }
-    
-    /* .btn-2,.btn-4{
-        position: absolute;
-        width: auto;
-        padding: 0px;
-        width: 110.91px;
-        height: 22px;
-        font-size: 0.69rem;
-        font-weight: 500;
-        padding-top: 3px;
-        text-align: center;
-        top: 40%;
-        z-index: 1;
-    }
-    .btn-5{
-        position: absolute;
-        top: 100px;
-        width: auto;
-        padding: 0px;
-        width: 100.91px;
-        font-size: 0.69rem;
-        font-weight: 500;
-        padding-top: 3px;
-        text-align: center;
-        z-index: 1;
-    }
-    .btn-3{
-        position: absolute;
-        padding: 0px;
-        width: auto;
-        width: 110.91px;
-        font-size: 0.69rem;
-        font-weight: 500;
-        padding-top: 3px;
-        text-align: center;
-        top: 100px;
-        left: 28px;
-    } */
-     .btn-2,.btn-3,.btn-4,.btn-5{
-        display: none;
-     }
-     .btn-2,.btn-3,.btn-4,.btn-5{
-        display: block;
-        position: absolute;
-        padding: 0px;
-        width: auto;
-        width: 110.91px;
-        font-size: 0.69rem;
-        font-weight: 500;
-        padding-top: 3px;
-        text-align: center;
-        top: 100px;
-        left: 28px;
-     }
     .our-stories{
         width: 95%
     }
@@ -592,11 +536,16 @@ main{
     }
     .pic-2-description>h5,.pic-3-description>h5,.pic-4-description>h5,.pic-5-description>h5{
         padding: 0px;
-        font-size:0.69rem;
+        font-size:0.8rem;
         width: 80%;
         margin-left: 30px;
         margin-top: 30px;
     }
+    .btn-2,.btn-3,.btn-4,.btn-5{
+        font-size: 0.8rem;
+    }
+
+    /* footer */
     .footer{
         flex-direction: column;
         height: auto;
