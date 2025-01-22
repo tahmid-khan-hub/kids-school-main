@@ -542,7 +542,7 @@ footer{
         margin-top: 30px;
     }
     .btn-2,.btn-3,.btn-4,.btn-5{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     /* footer */
@@ -550,6 +550,10 @@ footer{
         flex-direction: column;
         height: auto;
         width: 90%;
+    }
+    .education>p{
+        width: 357px;
+        text-align: left;
     }
     .about{
         margin-left: auto;
